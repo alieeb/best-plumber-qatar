@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Best Plumber in Qatar | Plumbing Repairs in Doha and Across Qatar</title>
+<meta name="description" content="Leaks, blocked drains, water heaters and more. Answer 4 quick questions and The Best Plumber in Qatar will call you back with a price.">
+<meta name="theme-color" content="#0b2a4a">
+<style>
+  :root {
+    --navy: #0b2a4a;
+    --navy-2: #123a63;
+    --blue: #0e6fd6;
+    --blue-dark: #0a57ab;
+    --sky: #e8f3ff;
+    --amber: #ffb020;
+    --amber-dark: #e89a00;
+    --green: #1faa59;
+    --ink: #10202f;
+    --muted: #5b6b7b;
+    --line: #dbe4ee;
+    --bg: #f6f9fc;
+    --white: #ffffff;
+    --red: #d43c3c;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(11, 42, 74, .12);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+  p { margin: 0 0 1em; }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  .top {
+    background: var(--navy);
+    color: var(--white);
+    position: sticky; top: 0; z-index: 20;
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.02rem; text-decoration: none; }
+  .brand svg { flex: none; }
+  .brand span em { font-style: normal; color: var(--amber); }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    border: 0; border-radius: 999px; cursor: pointer;
+    font: inherit; font-weight: 700; text-decoration: none;
+    padding: 12px 22px; transition: background .15s, transform .05s;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn-amber { background: var(--amber); color: var(--navy); }
+  .btn-amber:hover { background: var(--amber-dark); }
+  .btn-blue { background: var(--blue); color: var(--white); }
+  .btn-blue:hover { background: var(--blue-dark); }
+  .btn-green { background: var(--green); color: var(--white); }
+  .btn-ghost { background: transparent; color: var(--muted); padding: 8px 4px; border-radius: 6px; font-weight: 600; }
+  .btn-ghost:hover { color: var(--ink); }
+  .btn-block { width: 100%; padding: 15px 22px; font-size: 1.05rem; }
+  :focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+  .top .btn { padding: 9px 16px; font-size: .95rem; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 60%, #1a5490 100%);
+    color: var(--white);
+    padding: 40px 0 56px;
+  }
+  .hero-grid { display: grid; gap: 32px; align-items: center; }
+  .eyebrow {
+    display: inline-block; background: rgba(255, 255, 255, .12); border-radius: 999px;
+    padding: 6px 14px; font-size: .85rem; font-weight: 600; margin-bottom: 16px;
+  }
+  .hero h1 { font-size: clamp(2rem, 5.2vw, 3.2rem); letter-spacing: -.02em; }
+  .hero h1 em { font-style: normal; color: var(--amber); }
+  .hero .lead { font-size: 1.12rem; color: #d5e4f5; max-width: 34em; }
+  .ticks { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; }
+  .ticks li { display: flex; gap: 10px; align-items: flex-start; color: #eaf2fb; }
+  .ticks li::before {
+    content: ""; flex: none; width: 20px; height: 20px; margin-top: 2px; border-radius: 50%;
+    background: var(--amber) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='%230b2a4a' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+  }
+
+  /* Quiz card */
+  .quiz {
+    background: var(--white); color: var(--ink);
+    border-radius: 18px; box-shadow: 0 20px 50px rgba(0, 0, 0, .28);
+    padding: 22px; scroll-margin-top: 80px;
+  }
+  .quiz-head { display: flex; justify-content: space-between; align-items: center; font-size: .85rem; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .bar { height: 8px; background: var(--sky); border-radius: 99px; overflow: hidden; margin-bottom: 18px; }
+  .bar i { display: block; height: 100%; width: 0; background: var(--blue); border-radius: 99px; transition: width .3s ease; }
+  .quiz h2 { font-size: 1.35rem; margin-bottom: 14px; }
+  .opts { display: grid; gap: 10px; }
+  .opt {
+    display: flex; align-items: center; gap: 12px; width: 100%; text-align: left;
+    background: var(--white); border: 2px solid var(--line); border-radius: var(--radius);
+    padding: 13px 14px; font: inherit; font-weight: 600; color: var(--ink); cursor: pointer;
+    transition: border-color .15s, background .15s;
+  }
+  .opt:hover { border-color: var(--blue); background: var(--sky); }
+  .opt.sel { border-color: var(--blue); background: var(--sky); }
+  .opt .ico { flex: none; width: 38px; height: 38px; border-radius: 10px; background: var(--sky); display: grid; place-items: center; font-size: 1.25rem; }
+  .opt.sel .ico, .opt:hover .ico { background: var(--white); }
+  .quiz-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; min-height: 32px; }
+  .quiz-foot small { color: var(--muted); }
+
+  .field { margin-bottom: 14px; }
+  .field label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: 6px; }
+  .field label span { font-weight: 500; color: var(--muted); }
+  .field input, .field textarea {
+    width: 100%; font: inherit; color: var(--ink);
+    border: 2px solid var(--line); border-radius: 12px; padding: 12px 14px; background: var(--white);
+  }
+  .field textarea { resize: vertical; min-height: 70px; }
+  .field input:focus, .field textarea:focus { outline: none; border-color: var(--blue); }
+  .phone { display: flex; }
+  .phone b {
+    display: grid; place-items: center; padding: 0 12px; background: var(--sky);
+    border: 2px solid var(--line); border-right: 0; border-radius: 12px 0 0 12px; font-weight: 700;
+  }
+  .phone input { border-radius: 0 12px 12px 0; }
+  .field.bad input { border-color: var(--red); }
+  .err { display: none; color: var(--red); font-size: .85rem; margin-top: 5px; }
+  .field.bad .err { display: block; }
+  .recap { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 16px; padding: 0; list-style: none; }
+  .recap li { background: var(--sky); color: var(--navy); border-radius: 99px; padding: 4px 11px; font-size: .82rem; font-weight: 600; }
+  .fine { font-size: .8rem; color: var(--muted); text-align: center; margin: 12px 0 0; }
+
+  .done { text-align: center; padding: 8px 0; }
+  .done .badge { width: 64px; height: 64px; border-radius: 50%; background: #e3f7ec; display: grid; place-items: center; margin: 0 auto 14px; }
+  .done p { color: var(--muted); }
+  .done .btn { margin-top: 6px; }
+  .done .btn + .btn { margin-top: 10px; }
+
+  /* Sections */
+  section { padding: 56px 0; }
+  .sec-title { text-align: center; max-width: 640px; margin: 0 auto 32px; }
+  .sec-title h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); letter-spacing: -.01em; }
+  .sec-title p { color: var(--muted); margin: 0; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+  .card .ico { width: 46px; height: 46px; border-radius: 12px; background: var(--sky); display: grid; place-items: center; font-size: 1.5rem; margin-bottom: 12px; }
+  .card h3 { font-size: 1.08rem; }
+  .card p { color: var(--muted); margin: 0; font-size: .96rem; }
+
+  .how { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .steps { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); counter-reset: s; }
+  .step { counter-increment: s; text-align: center; }
+  .step::before {
+    content: counter(s); display: grid; place-items: center; width: 48px; height: 48px; margin: 0 auto 12px;
+    border-radius: 50%; background: var(--navy); color: var(--amber); font-weight: 800; font-size: 1.2rem;
+  }
+  .step h3 { font-size: 1.08rem; }
+  .step p { color: var(--muted); margin: 0; }
+
+  .areas { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 0; margin: 0; list-style: none; }
+  .areas li { background: var(--white); border: 1px solid var(--line); border-radius: 99px; padding: 8px 16px; font-weight: 600; }
+
+  .cta { background: var(--navy); color: var(--white); text-align: center; }
+  .cta h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); }
+  .cta p { color: #d5e4f5; }
+  .cta .row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 20px; }
+  .cta .btn-line { border: 2px solid rgba(255, 255, 255, .5); color: var(--white); background: transparent; }
+
+  footer { padding: 26px 0 96px; text-align: center; color: var(--muted); font-size: .9rem; }
+
+  /* Mobile call bar */
+  .dock {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: var(--white); border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(11, 42, 74, .1);
+  }
+  .dock .btn { padding: 13px 10px; }
+
+  @media (min-width: 900px) {
+    .hero { padding: 64px 0 80px; }
+    .hero-grid { grid-template-columns: 1.05fr .95fr; gap: 56px; }
+    .quiz { padding: 28px; }
+    .dock { display: none; }
+    footer { padding-bottom: 26px; }
+  }
+  @media (max-width: 600px) {
+    .top .btn b { display: none; }
+    .top .btn { flex: none; }
+    .brand { font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="The Best Plumber in Qatar">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <rect width="34" height="34" rx="9" fill="#ffb020"/>
+        <path d="M17 6c4 5.2 7 8.9 7 12.6A7 7 0 0 1 10 18.6C10 14.9 13 11.2 17 6z" fill="#0b2a4a"/>
+      </svg>
+      <span>The Best Plumber <em>in Qatar</em></span>
+    </a>
+    <a class="btn btn-amber" data-call href="#">
+      <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      <span>Call</span> <b data-phone-text></b>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Plumbing repairs across Qatar</span>
+        <h1>Plumbing problem? <em>Let's get it fixed.</em></h1>
+        <p class="lead">Leaks, blocked drains, water heaters, pumps and more. Answer 4 quick questions and we will call you back with a price.</p>
+        <ul class="ticks">
+          <li>Takes less than a minute</li>
+          <li>Clear price before any work starts</li>
+          <li>Villas, apartments, offices and shops</li>
+        </ul>
+      </div>
+
+      <div class="quiz" id="quiz" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-title">
+        <h2>What we fix</h2>
+        <p>One call for the plumbing jobs that cannot wait.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="ico">💧</div><h3>Leaks and burst pipes</h3><p>We find the source, stop the water and repair the pipe.</p></div>
+        <div class="card"><div class="ico">🚿</div><h3>Blocked drains and toilets</h3><p>Slow sinks, blocked toilets and smelly drains cleared.</p></div>
+        <div class="card"><div class="ico">🔥</div><h3>Water heaters</h3><p>No hot water, leaking tanks, repairs and replacements.</p></div>
+        <div class="card"><div class="ico">🚰</div><h3>Taps, showers and toilets</h3><p>Dripping taps, running toilets, mixers and flush repairs.</p></div>
+        <div class="card"><div class="ico">⚙️</div><h3>Water pumps and tanks</h3><p>Low pressure, noisy pumps and tank problems sorted.</p></div>
+        <div class="card"><div class="ico">🔧</div><h3>New installations</h3><p>Sinks, toilets, washing machines, filters and fittings.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap">
+      <div class="sec-title">
+        <h2>How it works</h2>
+        <p>Three simple steps from problem to fixed.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Tell us the problem</h3><p>Answer 4 quick questions and leave your number.</p></div>
+        <div class="step"><h3>We call you back</h3><p>We confirm the details and give you a price.</p></div>
+        <div class="step"><h3>We come and fix it</h3><p>A plumber arrives at the agreed time and does the job.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-title">
+        <h2>Areas we cover</h2>
+        <p>Doha and the surrounding areas.</p>
+      </div>
+      <ul class="areas">
+        <li>Doha</li><li>Al Rayyan</li><li>Al Wakrah</li><li>Lusail</li><li>The Pearl</li><li>West Bay</li><li>Al Khor</li><li>Umm Salal</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Need a plumber?</h2>
+      <p>Tell us what is wrong and we will call you back.</p>
+      <div class="row">
+        <a class="btn btn-amber" href="#quiz">Get my price</a>
+        <a class="btn btn-line" data-call href="#">Call <span data-phone-text></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="year"></span> The Best Plumber in Qatar. All rights reserved.</div>
+</footer>
+
+<div class="dock">
+  <a class="btn btn-blue" data-call href="#">Call now</a>
+  <a class="btn btn-amber" href="#quiz">Get my price</a>
+</div>
+
+<script>
+// ---- Settings: change these to your real details ----
+var CONFIG = {
+  phone: "+974 0000 0000",     // number shown on the page and used by the Call buttons
+  whatsapp: "+974 0000 0000",  // number that receives quiz requests on WhatsApp
+  formEndpoint: ""             // optional: a form service URL (e.g. Formspree) to also receive requests by email
+};
+
+var STEPS = [
+  { key: "problem", q: "What do you need help with?", opts: [
+    ["💧", "Leaking or burst pipe"],
+    ["🚿", "Blocked drain or toilet"],
+    ["🔥", "Water heater problem"],
+    ["🚰", "Tap, shower or toilet repair"],
+    ["⚙️", "Water pump or tank"],
+    ["🔧", "New installation or something else"]
+  ]},
+  { key: "urgency", q: "How soon do you need us?", opts: [
+    ["🚨", "Emergency, right now"],
+    ["📅", "Today"],
+    ["🗓️", "In the next few days"],
+    ["💬", "I just want a price"]
+  ]},
+  { key: "property", q: "What type of property is it?", opts: [
+    ["🏡", "Villa"],
+    ["🏢", "Apartment"],
+    ["🏪", "Office or shop"],
+    ["📍", "Other"]
+  ]},
+  { key: "area", q: "Where are you located?", opts: [
+    ["📍", "Doha"],
+    ["📍", "Al Rayyan"],
+    ["📍", "Al Wakrah"],
+    ["📍", "Lusail"],
+    ["📍", "Al Khor"],
+    ["📍", "Another area"]
+  ]}
+];
+
+var quiz = document.getElementById("quiz");
+var answers = {};
+var step = 0;
+var TOTAL = STEPS.length + 1; // questions + contact form
+
+function digits(s) { return String(s).replace(/\D/g, ""); }
+function isRealNumber(s) { return !/^9740*$/.test(digits(s)) && digits(s).length >= 11; }
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+  });
+}
+
+function head() {
+  var pct = Math.round((step / TOTAL) * 100);
+  return '<div class="quiz-head"><span>Step ' + (step + 1) + ' of ' + TOTAL + '</span><span>Free, no obligation</span></div>' +
+         '<div class="bar"><i style="width:' + Math.max(pct, 6) + '%"></i></div>';
+}
+
+function foot(note) {
+  return '<div class="quiz-foot">' +
+    (step > 0 ? '<button type="button" class="btn btn-ghost" id="back">&larr; Back</button>' : '<span></span>') +
+    '<small>' + note + '</small></div>';
+}
+
+function bindBack() {
+  var back = document.getElementById("back");
+  if (back) back.onclick = function () { step--; render(); };
+}
+
+function render() {
+  if (step < STEPS.length) renderQuestion(); else renderForm();
+}
+
+function renderQuestion() {
+  var s = STEPS[step];
+  var html = head() + '<h2>' + s.q + '</h2><div class="opts">';
+  s.opts.forEach(function (o) {
+    html += '<button type="button" class="opt' + (answers[s.key] === o[1] ? ' sel' : '') + '" data-v="' + esc(o[1]) + '">' +
+            '<span class="ico" aria-hidden="true">' + o[0] + '</span><span>' + o[1] + '</span></button>';
+  });
+  html += '</div>' + foot('Tap an answer to continue');
+  quiz.innerHTML = html;
+
+  quiz.querySelectorAll(".opt").forEach(function (b) {
+    b.onclick = function () {
+      answers[s.key] = b.getAttribute("data-v");
+      quiz.querySelectorAll(".opt").forEach(function (x) { x.classList.remove("sel"); });
+      b.classList.add("sel");
+      setTimeout(function () { step++; render(); }, 160);
+    };
+  });
+  bindBack();
+}
+
+function renderForm() {
+  var recap = STEPS.map(function (s) { return '<li>' + esc(answers[s.key]) + '</li>'; }).join("");
+  quiz.innerHTML = head() +
+    '<h2>Last step: where can we reach you?</h2>' +
+    '<ul class="recap">' + recap + '</ul>' +
+    '<form id="lead" novalidate>' +
+      '<div class="field" id="f-name"><label for="name">Your name</label>' +
+        '<input id="name" name="name" autocomplete="name" value="' + esc(answers.name || "") + '">' +
+        '<div class="err">Please enter your name.</div></div>' +
+      '<div class="field" id="f-phone"><label for="phone">Mobile number</label>' +
+        '<div class="phone"><b>+974</b><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="5512 3456" maxlength="12" value="' + esc(answers.phone || "") + '"></div>' +
+        '<div class="err">Please enter a valid 8-digit Qatar number.</div></div>' +
+      '<div class="field"><label for="notes">Anything else? <span>(optional)</span></label>' +
+        '<textarea id="notes" name="notes" placeholder="For example: water leaking under the kitchen sink">' + esc(answers.notes || "") + '</textarea></div>' +
+      '<button type="submit" class="btn btn-amber btn-block">Get my price</button>' +
+      '<p class="fine">We only use your number to contact you about this request.</p>' +
+    '</form>' + foot('');
+  bindBack();
+
+  document.getElementById("lead").onsubmit = function (e) {
+    e.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var phone = digits(document.getElementById("phone").value).replace(/^974/, "");
+    var okName = name.length > 1;
+    var okPhone = /^[3-7]\d{7}$/.test(phone);
+    document.getElementById("f-name").classList.toggle("bad", !okName);
+    document.getElementById("f-phone").classList.toggle("bad", !okPhone);
+    answers.name = name;
+    answers.phone = document.getElementById("phone").value;
+    answers.notes = document.getElementById("notes").value.trim();
+    if (!okName) { document.getElementById("name").focus(); return; }
+    if (!okPhone) { document.getElementById("phone").focus(); return; }
+    answers.phone = "+974 " + phone.slice(0, 4) + " " + phone.slice(4);
+    submit();
+  };
+}
+
+function message() {
+  var lines = [
+    "New plumbing request",
+    "",
+    "Problem: " + answers.problem,
+    "When: " + answers.urgency,
+    "Property: " + answers.property,
+    "Area: " + answers.area,
+    "Name: " + answers.name,
+    "Phone: " + answers.phone
+  ];
+  if (answers.notes) lines.push("Notes: " + answers.notes);
+  return lines.join("\n");
+}
+
+function submit() {
+  if (CONFIG.formEndpoint) {
+    fetch(CONFIG.formEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(answers)
+    }).catch(function () {});
+  }
+  var wa = isRealNumber(CONFIG.whatsapp)
+    ? "https://wa.me/" + digits(CONFIG.whatsapp) + "?text=" + encodeURIComponent(message())
+    : "";
+  if (wa) window.open(wa, "_blank", "noopener");
+  renderDone(wa);
+}
+
+function renderDone(wa) {
+  var urgent = /Emergency/.test(answers.urgency);
+  quiz.innerHTML =
+    '<div class="done">' +
+      '<div class="badge"><svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#1faa59" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' +
+      '<h2>Thank you, ' + esc(answers.name.split(" ")[0]) + '!</h2>' +
+      '<p>' + (wa
+        ? 'Your request is ready in WhatsApp. Press send there and we will reply with your price.'
+        : 'We have your details and will call you on ' + esc(answers.phone) + '.') + '</p>' +
+      (urgent ? '<p><strong>Emergency?</strong> Calling us is the fastest way to get help.</p>' : '') +
+      (wa ? '<a class="btn btn-green btn-block" target="_blank" rel="noopener" href="' + wa + '">Open WhatsApp</a>' : '') +
+      '<a class="btn ' + (urgent ? 'btn-amber' : 'btn-blue') + ' btn-block" href="tel:+' + digits(CONFIG.phone) + '">Call ' + esc(CONFIG.phone) + '</a>' +
+    '</div>';
+}
+
+document.querySelectorAll("[data-call]").forEach(function (a) { a.href = "tel:+" + digits(CONFIG.phone); });
+document.querySelectorAll("[data-phone-text]").forEach(function (el) { el.textContent = CONFIG.phone; });
+document.getElementById("year").textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
